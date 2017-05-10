@@ -1,0 +1,416 @@
+@import url(//fonts.googleapis.com/css?family=Ubuntu:300,400,700);
+* {
+    margin: 0;
+    padding: 0;
+    background: scroll transparent none 0 0 repeat;
+    border: 0 none #000;
+    outline: 0 none #000;
+    border-radius: 0;
+    box-shadow: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-variant: inherit;
+    font-weight: inherit;
+    text-align: inherit;
+    text-decoration: inherit;
+    text-transform: inherit;
+    line-height: inherit;
+    cursor: inherit;
+    -webkit-tap-highlight-color: transparent;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+div.allComments input,
+div.allComments textarea {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+    cursor: text;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+}
+
+div.allComments a,
+div.allComments button,
+[type="button"],
+[type="checkbox"],
+[type="radio"],
+[for] {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+
+div.commentBlock {
+    background: #fff;
+    font-family: Ubuntu, sans-serif;
+}
+
+div.commentBlock {
+    max-width: 840px;
+    width: inherit;
+    margin: 10px;
+}
+
+ul.innerCommentBlock {
+    padding-left: 80px !important;
+    list-style: none;
+}
+ul.innerCommentBlock li {
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+ul.innerCommentBlock li:not(:first-child) {
+    margin-top: 20px;
+}
+ul.innerCommentBlock li:before {
+    content: "";
+    border-width: 10px 10px 10px 0;
+    border-style: solid;
+    border-color: transparent rgba(229, 229, 229, 0.5);
+    position: absolute;
+    top: 10px;
+    left: -10px;
+}
+ul.innerCommentBlock li header {
+    border-bottom: 1px solid #e5e5e5;
+    display: -webkit-box;
+    background: rgba(229, 229, 229, 0.5);
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+ul.innerCommentBlock li header * {
+    display: block;
+}
+ul.innerCommentBlock li article span * {
+    display: none !important;
+}
+ul.innerCommentBlock:hover li article span * {
+    display: block !important;
+}
+.comment{
+    width: 80%;
+    display: block;
+    float: left;
+}
+.editButtons{
+    width: 20%;
+    display: block;
+    float: right;
+}
+ul.innerCommentBlock li header h1 {
+    padding-left: 20px;
+    font-weight: normal;
+    line-height: 40px;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+ul.innerCommentBlock li header h1 a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul.innerCommentBlock li header h1.author:after {
+    content: "Author";
+    margin: 10px 0 10px 10px;
+    padding: 0 5px;
+    background: #9a3;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 20px;
+    position: absolute;
+}
+ul.innerCommentBlock li header button svg {
+    width: 20px;
+    height: 20px;
+}
+ul.innerCommentBlock li header button svg * {
+    fill: #999;
+}
+ul.innerCommentBlock li header button:hover svg * {
+    fill: #666;
+}
+ul.innerCommentBlock li header button.loved svg * {
+    fill: #f66;
+}
+ul.innerCommentBlock li header p {
+    width: 80px;
+    height: auto;
+    background: rgba(229, 229, 229, 0.5);
+    border: 1px solid #fff;
+    border-radius: 1px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 8px;
+    left: -91px;
+    padding: 2px;
+}
+ul.innerCommentBlock li article {
+    padding: 15px;
+    white-space: normal;
+    background: rgba(229, 229, 229, 0.5);
+    overflow-x: hidden;
+}
+ul.innerCommentBlock li article .reply {
+    color: #9a3;
+}
+ul.innerCommentBlock li article strong {
+    font-weight: 500;
+}
+ul.innerCommentBlock li article em {
+    font-style: italic;
+}
+ul.innerCommentBlock li article a {
+    text-decoration: underline;
+}
+ul.innerCommentBlock li article a:hover {
+    text-decoration: none;
+}
+ul.innerCommentBlock li article code {
+    font-family: "Source Code Pro", monospace;
+}
+
+form.commentForm ,  form.commentFormSingle  {
+    margin-top: 20px;
+    padding: 20px 20px 20px 100px;
+    background: #fff;
+    border-radius: 2px;
+    /*box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);*/
+    position: relative;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+form.commentForm:before {
+    content: "";
+    border-width: 10px 10px 10px 0;
+    border-style: solid;
+    border-color: transparent rgba(229, 229, 229, 0.5);
+    position: absolute;
+    top: 22px;
+    left: 40px;
+}
+form.commentForm textarea,form.commentFormSingle textarea {
+    padding: 9px 20px !important;
+    width: 100% !important;
+    background: rgba(229, 229, 229, 0.5) !important;
+    display: block !important;
+}
+form.commentForm input.save , form.commentForm input.cancel {
+    width: 20% !important;
+    text-align: center !important;
+    color: white !important;;
+    border-radius:1px !important;
+    background: rgba(229, 229, 229, 0.5) !important;
+    display: block !important;
+    margin: 2px;
+}
+
+.buttonContainer{
+    width: 100%;
+    text-align: center;
+    color: white;
+    border-radius:1px;
+    display: block;
+}
+.commentWrapper{
+    margin-left: 80px;
+}
+.save,.cancel{
+    width: 49%;
+    text-align: center;
+    color: white;
+    float: right;
+    border-radius:1px;
+    background: rgba(229, 229, 229, 0.5);
+    display: block;
+}
+
+form.commentForm input.save,.save {
+    background: #3498db !important;
+}
+.innerCommentBlock button.save{
+    margin-right: 2px
+}
+form.commentForm input.cancel, .cancel {
+    background: #e74c3c !important;
+}
+
+.save:hover,.save:focus{
+    background: #3498db;
+
+}
+.cancel:hover, .cancel:focus, .cancel:active{
+    background: #e74c3c;
+
+}
+
+form.commentForm textarea:not(:first-child).form.commentFormSingle textarea:not(:first-child) {
+    margin-top: 2px;
+}
+form.commentForm textarea::-webkit-input-placeholder,form.commentFormSingle textarea::-webkit-input-placeholder {
+    color: #666;
+}
+form.commentForm textarea::-moz-placeholder , form.commentFormSingle textarea::-moz-placeholder{
+    color: #666;
+}
+form.commentForm textarea:-ms-input-placeholder,form.commentFormSingle textarea:-ms-input-placeholder{
+    color: #666;
+}
+form.commentForm textarea::placeholder,form.commentFormSingle textarea::placeholder  {
+    color: #666;
+}
+
+form.commentForm textarea ,form.commentFormSingle textarea{
+    padding: 20px;
+    height: 120px;
+    resize: none;
+}
+form.commentForm p {
+    margin-top: 10px;
+    padding: 10px 0;
+    width: 60%;
+}
+form.commentForm p a {
+    text-decoration: underline;
+}
+form.commentForm p a:hover {
+    text-decoration: none;
+}
+form.commentForm button {
+    margin: 10px auto 0;
+    padding: 10px 0;
+    width: 100%;
+    background: #2ecc71;
+    border-radius: 2px;
+    color: #fff;
+    font-weight: normal;
+    text-align: center;
+    display: block;
+}
+form.commentFormSingle button{
+    margin: 10px auto 0;
+    padding: 10px 0;
+    /*width: 40%;*/
+    /*background: #2ecc71;*/
+    border-radius: 2px;
+    color: #fff;
+    font-weight: normal;
+    text-align: center;
+    display: block;
+    float: right;
+}
+form.commentFormSingle button:hover:active{
+    background: #0095dd !important;
+}
+.btnContainer{
+    width:100%;
+}
+form.commentForm p {
+    width: 80px;
+    height: auto;
+    background: rgba(229, 229, 229, 0.5);
+    border: 1px solid #fff;
+    border-radius: 1px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 8px;
+    left: -91px;
+    padding: 2px;
+}
+form.commentForm label.author,ul.innerCommentBlock li header label.author{
+    display: none;
+}
+@media (max-width: 440px) {
+    ul.innerCommentBlock {
+        padding: 0;
+    }
+    ul.innerCommentBlock li:before {
+        content: none;
+    }
+    ul.innerCommentBlock li header p {
+        clip: rect(0, 0, 0, 0);
+    }
+    ul.innerCommentBlock li header h1.author:after {
+        content: none;
+    }
+
+    form.commentForm {
+        padding-left: 20px;
+    }
+    form.commentForm:before {
+        content: none;
+    }
+    form.commentForm p {
+        clip: rect(0, 0, 0, 0);
+    }
+    form.commentForm input,
+    form.commentForm textarea {
+        padding: 3px;
+    }
+    form.commentForm textarea {
+        height: 80px;
+    }
+
+    form.commentForm label.author,
+    ul.innerCommentBlock li header label.author,
+    form.commentForm button {
+        margin: 10px 0 0;
+        width: 100%;
+    }
+    form.commentForm label.author{
+        padding: 9px 20px;
+        width: 100%;
+        background: rgba(229, 229, 229, 0.5);
+        display: block;
+    }
+    ul.innerCommentBlock li header label.author{
+        display: block;
+        padding-left: 15px;
+    }
+
+}
+
+@media screen and (max-width: 459px){
+    .innerCommentBlock button.save{
+        margin-top: 2px;
+        margin-right: 0 !important;
+    }
+}
+
+@media screen and  (min-width: 460px) and (max-width: 464px){
+    .innerCommentBlock button.save{
+        margin-top: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .innerCommentBlock button.save{
+        /*margin-top: 2px;*/
+        margin-right: 1px;
+    }
+}

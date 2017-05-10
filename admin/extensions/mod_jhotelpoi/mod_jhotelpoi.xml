@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" client="site" method="upgrade">
+    <name>JHotelReservationPoi</name>
+    <creationDate>2016-01-20</creationDate>
+    <author>CMSJunkie</author>
+    <copyright>(C) CMSJunkie. All rights reserved.</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html</license>
+    <authorEmail>info@cmsjunkie.com</authorEmail>
+    <authorUrl>www.cmsjunkie.com</authorUrl>
+    <version>5.7.0</version>
+    <description>JHotelreservation POI</description>
+
+    <files>
+        <filename>mod_jhotelpoi.xml</filename>
+        <filename module="mod_jhotelpoi">mod_jhotelpoi.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <folder>tmpl</folder>
+        <folder>assets</folder>
+    </files>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="poi_order" type="radio" class="btn-group btn-group-yesno radio" default="0" label="Select Order" description="">
+                    <option value="1">Random</option>
+                    <option value="0">Distance</option>
+                </field>
+                <field name="poi_number" type="number" default="1" label="Number of Poi to display"
+                       description="Specify the number of POI to display">
+                </field>
+                <field name="poi_distance" type="text" default="1000" required='required' label="Display By Distance in Km" description="Specify a distance in Km">
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

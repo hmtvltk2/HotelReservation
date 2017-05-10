@@ -1,0 +1,13 @@
+#tooltip {
+	position: absolute;
+	border: 1px solid #333;
+	background: #f7f5d1;
+	padding: 2px 5px;
+	color: #333;
+	display: none;
+}
+
+.tooltip  img {
+	width: 16px;
+	height: 16px;
+}

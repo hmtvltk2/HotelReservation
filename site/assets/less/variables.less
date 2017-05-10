@@ -1,0 +1,317 @@
+//Extra Variables
+
+@paddingNone: 0;
+@marginNone: 0;
+
+
+//used in joomlatabs.less
+@joomlatabMargin1: 3px;
+@joomlatabsMargin2 : 2px;
+
+@StyleLinkPadding:  @joomlatabMargin1;
+
+@paddingAirline:    3px;
+@verySmallMargin:   -36px;
+
+@headingMargin:     -2px;
+@baseMargin:        5px;
+@mediumMargin:      (@baseMargin + 5); //10px
+@largeMargin:       (@mediumMargin + 5); // 15px
+@largerMargin:      (@largeMargin + 5); //20px
+
+
+@basePadding:       5px;
+@mediumPadding:     (@basePadding + 5); //10px
+@largePadding:      (@mediumPadding + 5); // 15px
+@largerPadding:     (@largePadding + 5); // 20px
+
+@paddingHotelGallery: (@basePadding - 3);
+
+@commonBg:          #ffffff;
+@stylecommonBg:     #dddddd;
+@color-White:       #f9f9f9;
+@styleColor-blue:   #0000FF;
+
+@imageSolidBorder:  1px solid black !important;
+
+@widthInPixels:     300px;
+@popTextWidth:  @widthInPixels;
+@hotel_gallery_height: 402px;
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+@gray-base:              #000;
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray-darker:            lighten(@gray-base, 13.5%);   // #222
+@gray:                   #6f6f6f;                      // #555
+@gray-light1:            lighten(@gray-base, 60%);     // #999
+@gray-lighter1:          lighten(@gray-base, 93.5%);   // #eee
+
+@gray-05:                lighten(@gray-base, 95%);     // #f2f2f2
+@gray-10:                lighten(@gray-base, 90%);     // #e6e6e6
+@gray-20:                lighten(@gray-base, 80%);     // #cccccc
+@gray-30:                lighten(@gray-base, 70%);     // #b3b3b3
+@gray-40:                lighten(@gray-base, 60%);     // #999999
+@gray-50:                lighten(@gray-base, 50%);     // #808080
+@gray-60:                lighten(@gray-base, 40%);     // #666666
+@gray-70:                lighten(@gray-base, 30%);     // #4d4d4d
+@gray-80:                lighten(@gray-base, 20%);     // #333333
+@gray-90:                lighten(@gray-base, 10.25%);  // #1a1a1a
+
+//colors used in style.css
+@reservedColor:          #5555FF;
+@ignoredColor:           @gray-20;
+@unavailableColor:       #AAAAAA;
+@availableColor:         #C5FEA9;
+@styleBorderColor:       #749CD3;
+
+@Style-link-Color:       #555555;
+
+//reserved details border colors
+@reserved-Details-Reserved:    #D3B503;
+@reserved-Details-Canceled:    #A40000;
+@reserved-Details-Checked_in:  #147E0C;
+@reserved-Details-Checked_out: #5B81B2;
+@reserved-Details-Late:        #FF8784;
+/////////////////////////////////////
+
+
+@poptextBackground:      #fffeee;
+@poptextBorderColor:     #f7a229;
+
+@borderStyleColor1:      #E2ECF5;
+@borderStyleColor2:      #ACC9E3;
+@borderStyleColor3:      #998855;
+
+@styleBd-Color:          #BBBBBB;
+
+//-------------------------------
+
+//jTopOffersColors:
+@gridpostColor:              #999999;
+@btnbgColor:                 #67b700;
+@numberbgColor:              #C00074;
+@greenColor:                 #529E43;
+@top-offer-link-hover-color: #1E6386;
+@li-hover-gradient1:         #F7F7F7;
+@li-hover-gradient2:         #E2E2E2;
+//-------------------
+
+//jHotelReservation module css colors
+@bg-ui-autocomplete-color:    #80B8C5;
+@bg-ui-autocomplete-category: #E3EEF0;
+@container-border-color:      #EAEAEA;
+@container-bg-color:          #F1F1F1;
+@container-inner-color:       #555555;
+@container-inner-border:      #E5E5E5;
+@container-inner-td-border:   #E4E4E4;
+@mod-hr-bg:                   #fafafa;
+@inner-shadow-color:          #c0c0c0;
+@li-hover-bg:                 #A9CED8;
+@li-selected-link:            #689ca9;
+@anchor-color:                #0185CA;
+@anchor-color-visited:        #067AB4;
+@search-box-border-top:       #CDCDCD;
+@search-color:                #111111;
+@search-text-shadow:          #E8F1FF;
+@search-border:               #99a99f;
+
+//-----------------------------------
+
+
+@brand-primary:         darken(#428bca, 6.5%); // #337ab7
+
+
+
+
+//## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
+@border-radius-base:        4px;
+
+
+//** Disabled cursor for form controls and buttons.
+@cursor-disabled:                not-allowed;
+
+
+//** Global color for active items (e.g., navs or dropdowns).
+@component-active-color:    #fff;
+//** Link hover color set via `darken()` function.
+@link-hover-color:      darken(@link-color, 15%);
+//** Link hover decoration.
+@link-hover-decoration: underline;
+
+//## Define common padding and @component-active-bg radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
+@component-active-bg:       @brand-primary;
+
+@font-size-base:          14px;
+@font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
+@font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
+@font-size-xsmall:        ceil((@font-size-base * 0.1)); // ~1px
+@style-link-font-size:    (@font-size-small - 1);
+@font-size-xlarge:        ceil((@font-size-base * 1.5)); // ~21px
+@font-size-xlarger:       ceil((@font-size-base * 1.71)); // ~24px
+
+@font-family-general: 'Oswald','Verdana',sans-serif;
+@font-family-general-variant-1: Arial, Helvetica, sans-serif;
+
+//== Form states and alerts
+//
+//## Define colors for form feedback states and, by default, alerts.
+
+@state-success-text:             #3c763d;
+@state-success-bg:               #dff0d8;
+@state-success-border:           darken(spin(@state-success-bg, -10), 5%);
+
+@state-info-text:                #31708f;
+@state-info-bg:                  #d9edf7;
+@state-info-border:              darken(spin(@state-info-bg, -10), 7%);
+
+@state-warning-text:             #8a6d3b;
+@state-warning-bg:               #fcf8e3;
+@state-warning-border:           darken(spin(@state-warning-bg, -10), 5%);
+
+@state-danger-text:              #a94442;
+@state-danger-bg:                #f2dede;
+@state-danger-border:            darken(spin(@state-danger-bg, -10), 5%);
+
+
+
+//** Global textual link color.
+@link-color:            @brand-primary;
+
+//== Components
+//
+//## Define common padding and @component-active-bg radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
+
+@padding-base-vertical:     6px;
+@padding-base-horizontal:   12px;
+
+@padding-large-vertical:    10px;
+@padding-large-horizontal:  16px;
+
+@padding-small-vertical:    5px;
+@padding-small-horizontal:  10px;
+
+@padding-xs-vertical:       1px;
+@padding-xs-horizontal:     5px;
+
+@line-height-large:         1.3333333; // extra decimals for Win 8.1 Chrome
+@line-height-small:         1.5;
+
+@border-radius-base:        4px;
+@border-radius-large:       6px;
+@border-radius-small:       3px;
+
+//** Global color for active items (e.g., navs or dropdowns).
+@component-active-color:    #fff;
+//** Global background color for active items (e.g., navs or dropdowns).
+@component-active-bg:       @brand-primary;
+
+//** Width of the `border` for generating carets that indicator dropdowns.
+@caret-width-base:          4px;
+//** Carets increase slightly in size for larger components.
+@caret-width-large:         5px;
+
+
+//== Buttons
+//
+//## For each of Bootstrap's buttons, define text, background and border color.
+
+@btn-font-weight:                normal;
+
+@btn-default-color:              #333;
+@btn-default-bg:                 #fff;
+@btn-default-border:             #ccc;
+
+@btn-primary-color:              #fff;
+@btn-primary-bg:                 @brand-primary;
+@btn-primary-border:             darken(@btn-primary-bg, 5%);
+
+@btn-link-disabled-color:        @gray-light;
+
+
+
+
+//== List group
+//
+//##
+
+//** Background color on `.list-group-item`
+@list-group-bg:                 #fff;
+//** `.list-group-item` border color
+@list-group-border:             #ddd;
+//** List group border radius
+@list-group-border-radius:      @border-radius-base;
+
+//** Background color of single list items on hover
+@list-group-hover-bg:           #f5f5f5;
+//** Text color of active list items
+@list-group-active-color:       @component-active-color;
+//** Background color of active list items
+@list-group-active-bg:          @component-active-bg;
+//** Border color of active list elements
+@list-group-active-border:      @list-group-active-bg;
+//** Text color for content within active list items
+@list-group-active-text-color:  lighten(@list-group-active-bg, 40%);
+
+//** Text color of disabled list items
+@list-group-disabled-color:      @gray-light;
+//** Background color of disabled list items
+@list-group-disabled-bg:         @gray-lighter;
+//** Text color for content within disabled list items
+@list-group-disabled-text-color: @list-group-disabled-color;
+
+@list-group-link-color:         #555;
+@list-group-link-hover-color:   @list-group-link-color;
+@list-group-link-heading-color: #333;
+
+
+@font-size-base:          14px;
+//** Unit-less `line-height` for use in components like buttons.
+@line-height-base:        1.428571429; // 20/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+@line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
+
+//== Panels
+//
+//##
+
+@panel-bg:                    #fff;
+@panel-body-padding:          15px;
+@panel-heading-padding:       10px 15px;
+@panel-footer-padding:        @panel-heading-padding;
+@panel-border-radius:         @border-radius-base;
+
+//** Border color for elements within panels
+@panel-inner-border:          #ddd;
+@panel-footer-bg:             #f5f5f5;
+
+@panel-default-text:          @gray-dark;
+@panel-default-border:        #ddd;
+@panel-default-heading-bg:    #f5f5f5;
+
+@panel-primary-text:          #fff;
+@panel-primary-border:        @brand-primary;
+@panel-primary-heading-bg:    @brand-primary;
+
+@panel-success-text:          @state-success-text;
+@panel-success-border:        @state-success-border;
+@panel-success-heading-bg:    @state-success-bg;
+
+@panel-info-text:             @state-info-text;
+@panel-info-border:           @state-info-border;
+@panel-info-heading-bg:       @state-info-bg;
+
+@panel-warning-text:          @state-warning-text;
+@panel-warning-border:        @state-warning-border;
+@panel-warning-heading-bg:    @state-warning-bg;
+
+@panel-danger-text:           @state-danger-text;
+@panel-danger-border:         @state-danger-border;
+@panel-danger-heading-bg:     @state-danger-bg;
+
+
+//** Border color for table and cell borders.
+@table-border-color:            #ddd;

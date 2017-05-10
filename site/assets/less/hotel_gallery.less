@@ -1,0 +1,210 @@
+//Uncoment to compile only this file
+@import "variables";
+
+div {
+  &.content {
+    display: none;
+    float: left;
+    width: (@widthInPixels + 145);
+    & a{
+      &:focus,
+      &:hover,
+      &:active{
+        text-decoration: underline;
+      }
+    }
+  }
+  &.navigation,&.content{
+    a {
+      text-decoration: none;
+      color: @gray-light !important;
+    }
+  }
+
+
+  &.controls{
+    margin-top: @baseMargin;
+    height: 23px;
+    a {
+      padding: @basePadding;
+    }
+  }
+  &.ss-controls {
+    float: left;
+  }
+  &.nav-controls {
+    float: right;
+  }
+  &.slideshow-container {
+    position: relative;
+    clear: both;
+    max-height: @hotel_gallery_height;
+  }
+
+  &.loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('loader.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: (@widthInPixels + 145);
+    height: @hotel_gallery_height;
+  }
+  &.slideshow {
+    span.image-wrapper {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    a.advance-link {
+      display: block;
+      width: (@widthInPixels + 145);
+      height: @hotel_gallery_height;
+      line-height: @hotel_gallery_height;
+      text-align: center;
+
+      &:hover,
+      &:active,
+      &:visited{
+        text-decoration: none;
+      }
+    }
+    img {
+      vertical-align: middle;
+      border: 1px solid #ccc;
+    }
+  }
+
+  &.download {
+    float: right;
+  }
+  &.caption-container {
+    position: relative;
+    clear: left;
+    height: 75px;
+    display: none;
+  }
+
+  &.caption {
+    padding: 12px;
+  }
+  &.image-title {
+    font-weight: bold;
+    font-size: 1.4em;
+  }
+  &.image-desc {
+    line-height: 1.3em;
+    padding-top: 12px;
+  }
+  &.navigation {
+    width: 155px;
+    border: 0px;
+  }
+
+  &.pagination {
+    a, span.current, span.ellipsis {
+      display: block;
+      float: left;
+      margin-right: 2px;
+      padding: (@paddingHotelGallery*2) (@basePadding - 2) @paddingHotelGallery (@basePadding + 2);
+      border: 1px solid #ccc;
+    }
+    & {
+      a:hover {
+        background-color: #eee;
+        text-decoration: none;
+      }
+      span {
+        &.current {
+          font-weight: bold;
+          background-color: #000;
+          border-color: #000;
+          color: #fff;
+        }
+        &.ellipsis {
+          border: none;
+          padding: @basePadding @paddingNone (@basePadding - 2) @paddingHotelGallery;
+        }
+      }
+    }
+  }
+
+}
+
+
+
+span.image-caption {
+  display: block;
+  position: absolute;
+  width: (@widthInPixels + 145);
+  top: 0;
+  left: 0;
+}
+
+ul.thumbs {
+  clear: both;
+  margin: @marginNone;
+  padding: @paddingNone;
+  li {
+    float: left;
+    padding: @paddingNone;
+    padding-left: 0px !important;
+    margin: @baseMargin @baseMargin @baseMargin @marginNone !important;
+    list-style: none !important;
+    background-image: none !important;
+  }
+  li.selected {
+    a.thumb {
+      background: #000;
+    }
+  }
+  img {
+    border: none;
+    display: block;
+  }
+}
+
+a.thumb {
+  padding: @paddingHotelGallery;
+  display: block;
+  border: 1px solid #ccc;
+  img {
+    margin: @marginNone !important;
+    padding: @paddingNone !important;
+    width: (@widthInPixels - 250);
+    height: (@widthInPixels - 250);
+  }
+
+  &:focus{
+    outline: none;
+  }
+
+}
+
+.picture-container {
+  div {
+    &.pagination {
+      clear: both;
+      padding: @paddingNone;
+    }
+    &.navigation {
+      div {
+        &.top {
+          margin-bottom: (@baseMargin + 7);
+          height: 11px;
+          background: none;
+          border: none;
+        }
+        &.bottom {
+          margin-top: (@baseMargin + 7);
+          background: none;
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+

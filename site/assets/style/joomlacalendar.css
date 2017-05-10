@@ -1,0 +1,75 @@
+[class*=" icon-"],
+#mod_hotel_reservation [class^="icon-"],
+.reservation-details [class^="icon-"] {
+  background-image: none;
+  background-position: 0px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 15px;
+  line-height: 15px;
+  margin: 1px 0 0 0 !important;
+  vertical-align: text-top;
+  width: 15px;
+}
+#mod_hotel_reservation .icon-calendar,
+.reservation-details .icon-calendar {
+  background-image: url("../img/ico-calendar2.png");
+}
+.icon-calendar:before {
+  content: "" !important;
+}
+#mod_hotel_reservation #jhotelreservation_datas_img,
+#mod_hotel_reservation #jhotelreservation_datae_img,
+.reservation-details #jhotelreservation_datae2_img,
+.reservation-details #jhotelreservation_datas2_img {
+  vertical-align: middle !important;
+  margin-left: -29px !important;
+  position: absolute;
+  text-align: left;
+  padding-top: 4px !important;
+}
+#mod_hotel_reservation .btn:hover,
+.reservation-details .btn:hover {
+  background: none;
+}
+#mod_hotel_reservation .btn,
+.reservation-details .btn {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background-color: transparent;
+  background-image: none;
+  background: none !important;
+  background-repeat: no-repeat;
+  border-color: transparent;
+  border-image: none;
+  border-radius: 0px;
+  border-style: solid;
+  border-width: 0px;
+  -webkit-box-shadow: 0 0px 0 rgba(255, 255, 255, 0.2) inset, 0 0px 0px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 0px 0 rgba(255, 255, 255, 0.2) inset, 0 0px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0px 0 rgba(255, 255, 255, 0.2) inset, 0 0px 0px rgba(0, 0, 0, 0.05);
+  color: #333333;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 18px;
+  margin-bottom: 0;
+  padding: 6px 12px;
+  text-align: center;
+  text-shadow: 0 0px 0px rgba(255, 255, 255, 0.75);
+  vertical-align: middle;
+  z-index: 998;
+  outline: none !important;
+}
+.reservation-detail button {
+  margin-top: 0 !important;
+}
+.reservation-cell .calendarHolder,
+.reservation-detail .calendarHolder {
+  margin-bottom: 0;
+  margin-left: 0;
+  max-width: 120px !important;
+  overflow: hidden;
+}

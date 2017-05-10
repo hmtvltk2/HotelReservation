@@ -1,0 +1,59 @@
+
+#excursionCalendarWrapper {
+  margin: 30px 0 0 20px;
+  padding: 10px;
+}
+#excursionCalendarWrapper .datepicker table {
+  background-color: #F9F9F9;
+  border-spacing: 20px 0px;
+  border-collapse: separate;
+  color: #333333;
+}
+#excursionCalendarWrapper input {
+  width: 150px !important;
+  padding: 0px !important;
+  display: inline-block !important;
+  text-align:center;
+  margin-top: 10px;
+  height: 30px;
+}
+
+#start_date_img {
+    margin-left: -40px !important;
+    margin-top: -10px;
+}
+
+#excursionCalendarWrapper span {
+  padding: 0px!important;
+  display: inline-block !important;
+  vertical-align: middle;
+  height: 30px;
+  background: none;
+  border: none;
+  margin: 0;
+  line-height: 16px;
+  float: left;
+}
+.icon-calendar {
+    background-image: url("../img/ico-calendar2.png");
+}
+
+#excursionCalendarWrapper .excursionLabel{
+	display: block;
+}
+
+#excursionCalendarWrapper .excursinCalendarHolder{
+	display: inline-block;
+}
+
+
+#sp-main-body-wrapper #sp-component-area {
+    border: 0px solid #DDD !important;
+	background: none !important;
+	padding: 5px !important;
+}
+
+.excursionPrice{
+	display:inline;
+	
+}

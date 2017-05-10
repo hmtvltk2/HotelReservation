@@ -1,0 +1,56 @@
+// Drop shadows
+//
+// Note: Deprecated `.box-shadow()` as of v3.1.0 since all of Bootstrap's
+// supported browsers that have box shadow capabilities now support it.
+
+.box-shadow(@shadow) {
+  -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
+  -moz-box-shadow: @shadow;
+  box-shadow: @shadow;
+}
+
+.scrollbar-box-shadow(@shadow){
+  -webkit-box-shadow: @shadow;
+  -moz-box-shadow: @shadow;
+}
+
+.box-shadow2(@shadowInset, @shadow){
+  -webkit-box-shadow:  @shadowInset, @shadow; // iOS <4.3 & Android <4.1
+  -moz-box-shadow: @shadowInset, @shadow;
+  box-shadow: @shadowInset, @shadow;
+}
+
+.box-shadow3(@shadowInset, @shadow,@shadow3){
+  -webkit-box-shadow:  @shadowInset, @shadow , @shadow3; // iOS <4.3 & Android <4.1
+  -moz-box-shadow: @shadowInset, @shadow, @shadow3;
+  box-shadow: @shadowInset, @shadow, @shadow3;
+}
+
+// User select
+// For selecting text on the page
+
+.user-select(@select) {
+  -webkit-user-select: @select;
+  -moz-user-select: @select;
+  -ms-user-select: @select; // IE10+
+  user-select: @select;
+}
+
+// WebKit-style focus
+
+.tab-focus() {
+  // Default
+  outline: thin dotted;
+  // WebKit
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+// Opacity
+
+.opacity(@opacity) {
+  opacity: @opacity;
+  // IE8 filter
+  @opacity-ie: (@opacity * 100);
+  filter: ~"alpha(opacity=@{opacity-ie})";
+}

@@ -1,0 +1,61 @@
+.mod_hotel_reservation {
+	background: url("../../images/tapistry.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);
+	font-size: 16px !important;
+	width: 100%;
+	padding: 0 0 7px 0;
+	border-radius: 0px; 
+	-moz-border-radius: 0px; 
+	-webkit-border-radius: 0px; 
+	border: none;
+	
+}
+
+.mod_hotel_reservation .search-nav {
+	margin: 3px 0px 8px;
+	color: #E8F1FF !important;
+}
+
+.mod_hotel_reservation label{
+	color: #fff !important;
+	font-size: 15px !important;
+}
+
+.mod_hotel_reservation h3 {
+	color: #fff !important;
+	font-size: 17px !important;
+	font-weight:bold;
+}
+
+.mod_hotel_reservation .reservation-container .divider {
+ 	padding: 3px 0;
+ 	margin-bottom: 4px;
+}
+
+.mod_hotel_reservation a {
+    color: #e8f1ff !important;
+    float:left;
+}
+
+.mod_hotel_reservation a:hover {
+    color: #edfff1 !important;
+}
+
+.mod_hotel_reservation .ui-hotel-button,  .mod_hotel_reservation a.ui-hotel-button {
+	background: #5A7380;
+    background: -moz-linear-gradient(center top , #5A7380 0%, #445760 80%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: -webkit-gradient(linear, left top, left bottom, from(#5A7380), to(#445760) );
+	background: -webkit-linear-gradient(top, #5A7380, #445760);
+	background: linear-gradient(top, #5A7380, #445760);
+    border: 1px solid #445760 !important;
+    text-shadow: 0 1px 0 #789A2B !important;
+    border-radius:0px;
+	 padding: 11px 31px !important;
+ }
+.mod_hotel_reservation .ui-hotel-button:hover {
+	background: #445760;
+    background: -moz-linear-gradient(center top , #445760 0%, #5A7380 80%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: -webkit-gradient(linear, left top, left bottom, from(#445760), to(#5A7380) );
+	background: -webkit-linear-gradient(top, #445760, #5A7380);
+	background: linear-gradient(top, #445760, #5A7380);
+    text-shadow: 0 -1px 0 #789A2B !important;
+}

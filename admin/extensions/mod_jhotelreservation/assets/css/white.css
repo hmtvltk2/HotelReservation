@@ -1,0 +1,38 @@
+.mod_hotel_reservation {
+	background:none #fff;
+	font-size: 14px !important;
+	width: 100%;
+	padding: 0 0 5px 0;
+	border-radius: 0px; 
+	-moz-border-radius: 0px; 
+	-webkit-border-radius: 0px; 
+	border: none;
+}
+
+.mod_hotel_reservation .search-nav {
+	margin: 3px 0px 8px;
+	color: #999 !important;
+}
+
+.mod_hotel_reservation label,.mod_hotel_reservation h3 {
+color: #777 !important;
+}
+
+.mod_hotel_reservation .reservation-container .divider {
+ 	padding: 3px 0;
+ 	margin-bottom: 4px;
+}
+
+.mod_hotel_reservation a {
+    color: #999 !important;
+    float:left;
+}
+
+.mod_hotel_reservation a:hover {
+    color: #eee !important;
+}
+
+.mod_hotel_reservation select, .mod_hotel_reservation textarea, .mod_hotel_reservation input[type="text"],.mod_hotel_reservation label {
+	border-color: #e2e2e2;
+	font-size: 14px !important;
+}

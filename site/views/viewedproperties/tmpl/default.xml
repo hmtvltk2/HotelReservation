@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="JHOTELRESERVATION_LIST_VIEWED_PROPERTIES">
+		<message>JHOTELRESERVATION_LIST_VIEWED_PROPERTIES</message>
+	</layout>
+
+	 <fields name="request">
+	    <fieldset name="request">    
+	        <field name="task"
+                   type="hidden"
+	            label=""
+	            required=""
+	            description=""
+	            default="viewedproperties.display"
+	        />
+	    </fieldset>
+	</fields>
+</metadata>

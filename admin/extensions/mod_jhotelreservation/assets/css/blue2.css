@@ -1,0 +1,89 @@
+.mod_hotel_reservation.horizontal {
+	background: url('../../images/royal_bg.png') repeat-x top #FAFAFA;
+}
+
+.mod_hotel_reservation {
+	background: url('../images/gray_bg.jpg') repeat-x top #FAFAFA;
+	font-size: 12px !important;
+	width: 100%;
+	padding: 0;
+}
+
+.mod_hotel_reservation table{
+	margin: 5px 7px 0;
+}
+
+
+.mod_hotel_reservation input, .mod_hotel_reservation select {
+	font-family: Tahoma, Arial, Helvetica, Sans-Serif;
+	font-size: 12px;
+	border: 1px solid #787878;
+	height: 18px;
+}
+
+
+.mod_hotel_reservation a,.mod_hotel_reservation a:visited {
+	color: #067AB4;
+}
+
+.mod_hotel_reservation a.selected {
+	color: #333;
+	font-weight: bold;
+}
+
+
+.mod_hotel_reservation.horizontal  .search-nav {
+ 	margin: 0;
+}
+
+#search-filter {
+    opacity: 1;
+    width: 100%;
+}
+
+.search-nav strong {
+	font-size: 1em;
+}
+
+ .search-nav input{
+ 	margin: 8px 0;
+	width: 170px;
+	padding: 3px;
+ }
+ 
+.mod_hotel_reservation.horizontal .search-nav input {
+	width: 217px;
+	padding: 2px;
+}
+
+
+.mod_hotel_reservation .ui-hotel-button,  .mod_hotel_reservation a.ui-hotel-button {
+	background: url("../images/check_btn_blue.png") no-repeat; 
+    background: -moz-linear-gradient(center top , #5A7380 0%, #445760 80%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: -webkit-gradient(linear, left top, left bottom, from(#5A7380), to(#445760) );
+	background: -webkit-linear-gradient(top, #5A7380, #445760);
+	background: linear-gradient(top, #5A7380, #445760);
+    border: 1px solid #445760 !important;
+    text-shadow: 0 1px 0 #789A2B !important;
+    border-radius:0px;
+	 padding: 11px 31px !important;
+ }
+.mod_hotel_reservation .ui-hotel-button:hover {
+	background: url("../images/check_btn_blue.png") no-repeat; 
+    background: -moz-linear-gradient(center top , #445760 0%, #5A7380 80%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: -webkit-gradient(linear, left top, left bottom, from(#445760), to(#5A7380) );
+	background: -webkit-linear-gradient(top, #445760, #5A7380);
+	background: linear-gradient(top, #445760, #5A7380);
+    text-shadow: 0 -1px 0 #789A2B !important;
+}
+
+
+.mod_hotel_reservation span.button{
+	float: right; 
+}
+
+#mod_hotel_reservation select, #mod_hotel_reservation textarea, #mod_hotel_reservation input[type="text"] {
+  padding: 2px !important;
+  font-size: 14px !important;
+  height: 24px;
+}

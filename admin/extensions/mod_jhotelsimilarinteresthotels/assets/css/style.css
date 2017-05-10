@@ -1,0 +1,116 @@
+.property-title{
+    float: left;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0;
+    padding-right: 5px;
+}
+
+.property-image{
+    border: medium none !important;
+    display: inline;
+    margin: 0;
+}
+
+.property-section {
+    border-bottom: none;
+}
+
+.property-container{
+    background: #f9f9f9;
+    padding: 10px;
+    margin: 10px;
+}
+.property-actions{
+    background: #f9f9f9;
+    padding: 10px;
+    margin: -8px 10px 10px 10px;
+}
+
+.prop-label{
+    display: block;
+    font-size: 12px;
+    padding: 0 3px 2px 0;
+    text-align: left;
+}
+
+.prop-price{
+    display: block;
+    font-size: 16px;
+    padding: 0 3px 2px 0;
+    text-align: left;
+    font-weight: 400;
+    color: #1ab394;
+}
+
+#property-book {
+    margin: 3px 3px 3px 0;
+}
+
+.prop-rating .hotel-rating {
+    margin: 2px 5px 5px 0px;
+}
+.prop-rating .hotel-rating .info {
+    float: left;
+    margin-right: 4px;
+}
+.prop-rating .hotel-rating .rating-classification {
+    margin: 3px 0px 3px 0px;
+    font-weight: bold;
+    height: 12px;
+}
+.prop-rating .hotel-rating .rating {
+    float: left;
+    background: #FFF176;
+    border: 1px solid #FFD115;
+    padding: 3px 10px;
+    line-height: 28px;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 2px;
+}
+.prop-rating .hotel-rating .ratingCount {
+    margin-top: -3px;
+}
+
+.prop-rating .right {
+    float: right !important;
+}
+.prop-book {
+    margin: 4px;
+}
+.prop-rating .hotel-recommanded {
+    float: right !important;
+}
+
+.prop-rating .hotel-recommanded {
+    background: #45A219;
+    width: 137px;
+    height: 23px;
+    color: #ffffff;
+    float: right;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px;
+    text-align: center;
+}
+
+.prop-rating .hotel-recommanded span {
+    font-size: 12px;
+    padding-left: 2px;
+}
+
+.property-image-horiz {
+    margin-right: 6px;
+}
+
+.property-image-horiz img {
+    border: 1px solid white;
+    border-radius: 6px;
+}
+
+#recommanded, #horizontal-rating > div {
+    margin: 0 auto !important;
+    float: left !important;
+}

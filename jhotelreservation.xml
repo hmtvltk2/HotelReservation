@@ -1,0 +1,106 @@
+
+					    	<extension type="component" version="3.0" method="upgrade" client="administrator">
+			  	 	    		<name>JHotelReservation</name>
+			  	 	    		<author>CMSJunkie</author>
+			  	 	    		<creationDate>September 2010</creationDate>
+			  	 	    		<copyright>(C) CMSJunkie. All rights reserved.</copyright>
+			  	 	    		<license>http://www.gnu.org/copyleft/gpl.html</license>
+			  	 	    		<authorEmail>info@cmsjunkie.com</authorEmail>
+			  	 	    		<authorUrl>www.cmsjunkie.com</authorUrl>
+					    		<version>6.0.3</version>
+					    		<description>JHotelreservation - Probably the best hotel reservation component for Joomla!</description>
+			  	 	    		
+			  	 	    		<install>
+			  	 	    			<sql>
+			  	 	    				<file driver="mysql" charset="utf8">sql/install.sql</file>
+			  	 	    			</sql>
+			  	 	    		</install>
+			  	 	    		
+			  	 	    		<uninstall>
+			  	 	    			<sql>
+			  	 	    				<file driver="mysql" charset="utf8">sql/uninstall.sql</file>
+			  	 	    			</sql>
+			  	 	    		</uninstall>	
+			  	 	    		
+			  	 	    		 <update> 
+			  	 	    				<schemas>
+			  	 	    						<schemapath type="mysql">sql/updates/mysql</schemapath>
+			  	 	    				</schemas>
+			  	 	    		</update>
+					    	 
+		  	 	    			 		<scriptfile>installReservation.php</scriptfile>
+	    					   		 
+  	 	    			 		    
+		 							<updateservers>
+				 				       <server type="extension" priority="2" name="HotelReservation Updates">http://updates.cmsjunkie.com/hotel/hotel_starter3.xml</server>
+			 				    	</updateservers>
+		 						
+					   		 
+					    	<files folder="site">
+			  	 	    			<filename>controller.php</filename>
+			  	 	    			<filename>index.html</filename>
+			  	 	    			<filename>jhotelreservation.php</filename>
+			  	 	    			
+			  	 	    			<folder>assets</folder>
+			  	 	    			<folder>classes</folder>
+			  	 	    			<folder>controllers</folder>
+			  	 	    			<folder>include</folder>
+			  	 	    			<folder>logs</folder>
+			  	 	    			<folder>models</folder>
+			  	 	    			<folder>views</folder>
+			  	 	    		</files>
+			  	 	    		
+			  	 	    		<media folder="media" destination="com_jhotelreservation">
+			  	 	    			<folder>css</folder>
+			  	 	    			<folder>js</folder>
+			  	 	    			<folder>pictures</folder>
+			  	 	    			<filename>index.html</filename>
+			  	 	    		</media>
+			  	 	    		
+			  	 	    		<administration>
+			  	 	    			<menu img="components/com_jhotelreservation/assets/img/jhotelreservation.gif">COM_J_HOTELRESERVATION</menu>
+			  	 	    			<submenu>
+			  	 	    				<menu img='components/com_jhotelreservation/assets/img/settings_16_16_icon.gif' view="applicationsettings">APPLICATION_SETTINGS</menu>
+			  	 	    				<menu img="components/com_jhotelreservation/assets/img/managehotels_16_16_icon.gif" view="hotels" >MANAGE_HOTELS</menu>
+			  	 	    				<menu img="components/com_jhotelreservation/assets/img/managerooms_16_16_icon.gif" view="rooms" >MANAGE_ROOMS</menu>			
+			  	 	    				<menu img="components/com_jhotelreservation/assets/img/currencies_16_16_icon.gif" view="currencies" >CURRENCY_SETTINGS</menu>
+			  	 	    				<menu img="components/com_jhotelreservation/assets/img/taxes_16_16_icon.gif" view="taxes" >MANAGE_TAXES</menu>
+			  	 	    				<menu img="components/com_jhotelreservation/assets/img/emails_16_16_icon.gif" view="emails" >MANAGE_EMAIL_TEMPLATES</menu>
+
+			  					
+			  					
+										
+										<menu img="components/com_jhotelreservation/assets/img/managereservations_16_16_icon.gif" view="reservations" >MANAGE_RESERVATIONS</menu>
+										<menu img="components/com_jhotelreservation/assets/img/about_16_16_icon.gif" controller="about" view="updates">UPDATES</menu>
+										<menu img="components/com_jhotelreservation/assets/img/about_16_16_icon.gif" controller="about" task="about">ABOUT</menu>
+					
+										</submenu>
+					 	    			<languages folder='admin'>
+					 	    				<language tag="en-GB">language/en-GB/en-GB.com_jhotelreservation.sys.ini</language>
+					 	    			</languages>
+					 	    		
+					 	    			<files folder="admin">
+					 	    				<filename>controller.php</filename>
+			 	    						<filename>access.xml</filename>
+			 	    						<filename>config.xml</filename>
+					 	    				<filename>index.html</filename>
+					 	    				<filename>jhotelreservation.php</filename>
+					 	    				<filename>help/readme.php</filename>
+					 	    				
+					 	    				<folder>assets</folder>
+					 	    				<folder>classes</folder>
+					 	    				<folder>controllers</folder>
+					 	    				<folder>extensions</folder>
+					 	    				<folder>helpers</folder>
+					 	    				<folder>help</folder>
+					 	    				<folder>language</folder>
+					 	    				<folder>libraries</folder>
+					 	    				<folder>models</folder>
+					 	    				<folder>sql</folder>
+					 	    				<folder>tables</folder>
+											<folder>theme</folder>
+					 	    				<folder>views</folder>		
+					 	    			</files>  
+					 	    		</administration>
+					 	    	</extension>
+					   	 

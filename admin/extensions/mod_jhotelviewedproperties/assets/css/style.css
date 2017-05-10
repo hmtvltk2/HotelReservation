@@ -1,0 +1,17 @@
+.property-title{
+    float: left;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0;
+    padding-right: 5px;
+}
+
+.property-image{
+    border: medium none !important;
+    display: inline;
+    margin: 0;
+}
+
+.property-section {
+    border-bottom: none;
+}

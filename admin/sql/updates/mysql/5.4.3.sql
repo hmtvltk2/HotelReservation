@@ -1,0 +1,1 @@
+ALTER TABLE `#__hotelreservation_permissions` CHANGE COLUMN `id` `id` INT(11) NOT NULL AUTO_INCREMENT  ;ALTER TABLE `#__hotelreservation_applicationsettings` ADD COLUMN `menu_id` VARCHAR(7) NULL  AFTER `enable_excursions` ;ALTER TABLE `#__hotelreservation_emails` CHANGE COLUMN `email_type` `email_type` VARCHAR(200) NOT NULL  ;

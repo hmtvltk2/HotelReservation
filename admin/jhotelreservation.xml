@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://www.joomla.org/xml/dtd/1.5/component-install.dtd">
+<extension type="component" version="3.0" method="upgrade" client="administrator">
+	<name>JHotelReservation</name>
+	<author>CMSJunkie</author>
+	<creationDate>September 2010</creationDate>
+	<copyright>(C) CMSJunkie. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>info@cmsjunkie.com</authorEmail>
+	<authorUrl>www.cmsjunkie.com</authorUrl>
+	<version>5.0.0</version>	
+	<description>JHotelreservation - Probably the best hotel reservation component for Joomla!</description>
+	
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.sql</file>
+		</sql>
+	</install>
+	
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.sql</file>
+		</sql>
+	</uninstall>	
+	
+	 <update> 
+			<schemas>
+					<schemapath type="mysql">sql/updates/mysql</schemapath>
+			</schemas>
+	</update>
+	
+	<scriptfile>installReservation.php</scriptfile>
+	
+	<!-- Site Main File Copy Section -->
+	<files folder="site">
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>jhotelreservation.php</filename>
+		
+		<folder>assets</folder>
+		<folder>classes</folder>
+		<folder>controllers</folder>
+		<folder>include</folder>
+		<folder>logs</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+		<folder>classes</folder>
+	</files>
+	
+	<media folder="media" destination="com_jhotelreservation">
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>pictures</folder>
+		<filename>index.html</filename>
+	</media>
+	
+	<administration>
+		<menu img="components/com_jhotelreservation/assets/img/jhotelreservation.gif">COM_J_HOTELRESERVATION</menu>
+		<submenu>
+			<menu img='components/com_jhotelreservation/assets/img/settings_16_16_icon.gif' view="applicationsettings">APPLICATION_SETTINGS</menu>
+			<menu img="components/com_jhotelreservation/assets/img/paymentprocessors_16_16_icon.gif" view="paymentprocessors" >PAYMENT_PROCESSORS</menu>
+			<menu img="components/com_jhotelreservation/assets/img/hotels_16_16_icon.gif" view="hotels" >MANAGE_HOTELS</menu>
+			<menu img="components/com_jhotelreservation/assets/img/managerooms_16_16_icon.gif" view="rooms" >MANAGE_ROOMS</menu>			
+			<menu img="components/com_jhotelreservation/assets/img/manageroomdiscounts_16_16_icon.gif" view="roomdiscounts" >MANAGE_ROOM_DISCOUNTS</menu>
+			<menu img="components/com_jhotelreservation/assets/img/managepackages_16_16_icon.gif" view="extraoptions" >MANAGE_EXTRAS</menu>
+			<menu img="components/com_jhotelreservation/assets/img/manageoffers_16_16_icon.gif" view="offers" >MANAGE_OFFERS</menu>
+			<menu img="components/com_jhotelreservation/assets/img/managecurrencies_16_16_icon.gif" view="currencies" >CURRENCY_SETTINGS</menu>
+			<menu img="components/com_jhotelreservation/assets/img/managetaxes_16_16_icon.gif" view="taxes" >MANAGE_TAXES</menu>
+			<menu img="components/com_jhotelreservation/assets/img/manageemails_16_16_icon.gif" view="emails" >MANAGE_EMAIL_TEMPLATES</menu>
+			<!--<menu img="components/com_jhotelreservation/assets/img/manageairporttransfertypes_16_16_icon.gif" view="manageairporttransfertypes" >MANAGE_AIRPORT_TRANSFERS</menu>-->
+			<menu img="components/com_jhotelreservation/assets/img/hotelreviews_16_16_icon.gif"  view="hotelratings">MANAGE_HOTEL_REVIEWS</menu>
+			<menu img="components/com_jhotelreservation/assets/img/manage_newsletter_users_16_16_icon.gif" view="usersmanagement">MANAGE_USERS_ACCESS</menu> 
+			<!-- <menu img="components/com_jhotelreservation/assets/img/manage_hotel_users_16_16_icon.gif" view="managehotelusers">MANAGE_HOTEL_USERS</menu>-->
+			<menu img="components/com_jhotelreservation/assets/img/addreservations_16_16_icon.gif"  view="reservation" layout="edit">ADD_RESERVATIONS</menu>
+			<menu img="components/com_jhotelreservation/assets/img/managereservations_16_16_icon.gif" view="reservations" >MANAGE_RESERVATIONS</menu>		
+			<menu img="components/com_jhotelreservation/assets/img/reservationsreports_16_16_icon.gif" view="reports" >RESERVATIONS_REPORTS</menu>
+			<menu img="components/com_jhotelreservation/assets/img/manageinvoices_16_16_icon.gif" view="invoices" >MANAGE_INVOICES</menu>
+			<menu img="components/com_jhotelreservation/assets/img/about_16_16_icon.gif" view="about">ABOUT</menu>
+		</submenu>
+		<languages folder='admin'>
+			<language tag="en-GB">language/en-GB/en-GB.com_jhotelreservation.sys.ini</language>
+		</languages>
+	
+		<files folder="admin">
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>jhotelreservation.php</filename>
+			<filename>help/readme.html</filename>
+			
+			<folder>assets</folder>
+            <folder>theme</folder>
+            <folder>classes</folder>
+			<folder>controllers</folder>
+			<folder>extensions</folder>
+			<folder>helpers</folder>
+			<folder>help</folder>
+			<folder>language</folder>
+			<folder>libraries</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>		
+		</files>  
+	</administration>
+</extension>

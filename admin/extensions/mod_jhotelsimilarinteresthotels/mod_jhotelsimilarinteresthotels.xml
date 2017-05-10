@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" client="site" method="upgrade">
+    <name>JHotelReservationSimilarInterestHotels</name>
+    <creationDate>2016-01-20</creationDate>
+    <author>CMSJunkie</author>
+    <copyright>(C) CMSJunkie. All rights reserved.</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html</license>
+    <authorEmail>info@cmsjunkie.com</authorEmail>
+    <authorUrl>www.cmsjunkie.com</authorUrl>
+    <version>5.7.0</version>
+    <description>JHotelreservation Similar Interest Hotels</description>
+
+    <files>
+        <filename>mod_jhotelsimilarinteresthotels.xml</filename>
+        <filename module="mod_jhotelsimilarinteresthotels">mod_jhotelsimilarinteresthotels.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <folder>tmpl</folder>
+        <folder>assets</folder>
+    </files>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="layout-type" type="list" default="vertical" label="Layout type"
+                       description="How will module will be displayed, horizontal or vertical">
+                    <option value="horizontal">horizontal</option>
+                    <option value="vertical">vertical</option>
+                </field>
+                <field name="number_of_properties" type="number" default="4" label="Number of properties to Display"
+                       description="Specify the number of properties to display">
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

@@ -1,0 +1,37 @@
+ul.tabs {
+    margin: 0;
+    padding: 0 0 2px 0;
+    clear: both;
+}
+
+li.tab {
+    display: inline;
+   	margin-left: 3px;
+    padding: 4px 10px;
+    list-style: none;
+    background: none repeat scroll 0 0 #E9E9E9;
+    border: 1px #333 solid;
+    border: 1px solid #CCCCCC;
+	cursor:hand;
+	cursor:pointer;
+	color: #555;
+	float: left;
+	margin-bottom: -1px;
+}
+
+li.tab.active {
+    background: none repeat scroll 0 0 #F9F9F9;
+    border-bottom: 1px solid #F9F9F9;
+    color: #000000;
+}
+
+li.tab .remove {
+    color: #900;
+}
+
+div.tabcontent {
+    border: 1px solid #CCCCCC;
+    clear: both;
+    padding: 10px;
+    background-color: #F9F9F9;
+}

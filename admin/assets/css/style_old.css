@@ -1,0 +1,39 @@
+body {
+	background-color: #FFFFFF;
+}
+
+.btn_normal {
+	color: #050;
+	font: bold 12px 'trebuchet ms', helvetica, sans-serif;
+	background-color: #fed;
+	border: 1px solid;
+	width: 150px;
+	padding: 0px 0px;
+}
+
+.tr_title {
+	background-color: #BBBBBB;
+	text-align: center;
+	vertical-align: middle;
+}
+
+/* continuare*/
+div.DIV_LANGUAGE {
+	text-align: right;
+}
+
+img.FLAG_LANGUAGE_SEL {
+	width: 24px;
+	height: 16px;
+	border: solid 2px black;
+	cursor: hand;
+	cursor: pointer;
+}
+
+img.FLAG_LANGUAGE {
+	width: 24px;
+	height: 16px;
+	border: solid 0px black;
+	cursor: hand;
+	cursor: pointer;
+}

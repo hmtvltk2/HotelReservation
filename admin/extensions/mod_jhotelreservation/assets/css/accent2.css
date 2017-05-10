@@ -1,0 +1,64 @@
+.mod_hotel_reservation {
+	background: url("../../images/floral-accent-4.png") repeat scroll 0 0 rgba(142, 189, 153, 0.7);
+	font-size: 16px !important;
+	width: 100%;
+	padding: 0 0 7px 0;
+	border-radius: 0px; 
+	-moz-border-radius: 0px; 
+	-webkit-border-radius: 0px; 
+	border: none;
+}
+
+.mod_hotel_reservation .search-nav {
+	margin: 3px 0px 8px;
+	color: #E8F1FF !important;
+}
+
+.mod_hotel_reservation label {
+	color: #222 !important;
+	font-size: 15px !important;
+}
+
+.mod_hotel_reservation h3 {
+	color: #fff !important;
+	font-size: 17px !important;
+	font-weight:bold;
+}
+.mod_hotel_reservation .reservation-container .divider {
+ 	padding: 3px 0;
+ 	margin-bottom: 4px;
+}
+
+
+
+.mod_hotel_reservation a {
+    color: #e8f1ff !important;
+    float:left;
+}
+
+.mod_hotel_reservation a:hover {
+    color: #edfff1 !important;
+}
+
+
+.mod_hotel_reservation .ui-hotel-button, .mod_hotel_reservation a.ui-hotel-button {
+    border: 1px solid #C84D5F ;
+	background: #C84D5F;
+	background: -moz-linear-gradient(center top , #C84D5F 0%, #C13C50 80%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: -webkit-gradient(linear, left top, left bottom, from(#C84D5F), to(#C13C50) );
+	background: -webkit-linear-gradient(top, #C84D5F, #C13C50);
+	background: linear-gradient(top, #C84D5F, #C13C50);
+	padding: 11px 31px !important;
+ 	font-weight:bold;
+ 	
+}
+.mod_hotel_reservation .ui-hotel-button:hover {
+	background: #C13C50;
+	background: -moz-linear-gradient(center top , #C13C50 0%, #C84D5F 80%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: -webkit-gradient(linear, left top, left bottom, from(#C13C50), to(#C84D5F) );
+	background: -webkit-linear-gradient(top, #C13C50, #C84D5F);
+	background: linear-gradient(top, #C13C50, #C84D5F);
+    cursor: pointer;
+    text-shadow: 1px -1px #1B98C7;
+}
+

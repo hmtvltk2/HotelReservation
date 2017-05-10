@@ -1,0 +1,155 @@
+/******* MENU *******/
+.tabs-container {
+	margin: 0 0 20px 1em;
+	width: 260px;
+	float: right;
+	font-size: 11px !important;
+}
+
+.ui-corner-all {
+	-moz-border-radius: 0;
+}
+
+.ui-widget-content {
+	border: 0;
+	background: none;
+}
+
+.ui-corner-top {
+	-moz-border-radius-topleft: 0px;
+	-moz-border-radius-topright: 0px;
+}
+
+.ui-tabs-nav {
+	margin-left: 5px;
+}
+
+.ui-tabs-nav li {
+	background-image: none !important;
+	margin-left: 0px !important;
+	padding-left: 0px !important;
+}
+
+.ui-tabs-nav li a {
+	color: #555555 !important;
+	padding: 3px 5px !important;
+}
+
+.ui-tabs-panel {
+	background: none #F6F6EA !important;
+	border: 1px solid #CCC;
+	border-style: solid;
+	border-width: 1px;
+	padding: 10px !important;
+	height: 200px;
+	overflow: auto;
+}
+
+.ui-corner-bottom {
+	-moz-border-radius-bottomleft: 0px;
+	-moz-border-radius-bottomright: 0px;
+}
+
+.ui-tabs {
+	padding: 0;
+	-moz-border-radius: 0;
+	-moz-border-radius-topleft: 0px;
+	-moz-border-radius-topright: 0px;
+}
+
+.ui-widget-header {
+	background: none;
+	border: 0;
+}
+
+.tabs-container ul {
+	list-style: none;
+	list-style-position: outside;
+}
+
+.tabs-container ul.tabs li {
+	float: left;
+	margin-right: 5px;
+	margin-bottom: -1px;
+}
+
+.tabs-container ul.tabs li {
+	font-weight: 700;
+	display: block;
+	padding: 5px 10px 5px 10px;
+	background: #efefef;
+	margin-bottom: -1px;
+	border: 1px solid #d0ccc9;
+	border-width: 1px 1px 1px 1px;
+	position: relative;
+	color: #898989;
+	cursor: pointer;
+}
+
+.tabs-container ul.tabs li.active {
+	background: #F6F6EA;
+	top: 1px;
+	border-bottom: 0;
+	color: #5f95ef;
+}
+/******* /MENU *******/
+/******* CONTENT *******/
+.content {
+	margin: 0pt auto;
+	background: #efefef;
+	background: #fff;
+	border: 1px solid #d0ccc9;
+	text-align: left;
+	padding: 10px;
+	padding-bottom: 20px;
+	font-size: 11px;
+}
+
+.content h1 {
+	line-height: 1em;
+	vertical-align: middle;
+	height: 48px;
+	padding: 10px 10px 10px 52px;
+}
+/******* /CONTENT *******/
+/******* NEWS *******/
+.content.news h1 {
+	background: transparent url(images/news.jpg) no-repeat scroll left top;
+}
+
+.content.news {
+	display: block;
+}
+/******* /NEWS *******/
+/******* TUTORIALS *******/
+.content.tutorials h1 {
+	background: transparent url(images/tuts.jpg) no-repeat scroll left top;
+}
+
+.content.tutorials {
+	display: none;
+}
+/******* /TUTORIALS *******/
+/******* LINKS *******/
+.content.links h1 {
+	background: transparent url(images/links.jpg) no-repeat scroll left top;
+}
+
+.content.links {
+	display: none;
+}
+
+.content.links a {
+	color: #5f95ef;
+}
+/******* /LINKS *******/
+
+/* tab pane styling */
+.panes div {
+	display: none;
+	padding: 15px 10px;
+	border: 1px solid #999;
+	border-top: 0;
+	height: 100px;
+	background-color: #fff;
+}

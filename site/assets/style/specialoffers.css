@@ -1,0 +1,222 @@
+#special-offers-container {
+  background: #ffffff;
+}
+#special-offers-container #search-order {
+  line-height: 20px;
+  min-height: 47px;
+  padding: 10px;
+}
+.special-offers {
+  background: #ffffff;
+  padding: 15px 10px;
+}
+.special-offers .offer-container.featured {
+  background: #E0EEF0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e0eef0), to(#cfe4e8));
+  background: -webkit-linear-gradient(top, #e0eef0, #cfe4e8);
+  background: -moz-linear-gradient(top, #e0eef0, #cfe4e8);
+  background: linear-gradient(top, #e0eef0, #cfe4e8);
+}
+.special-offers .hotel-name {
+  padding: 0 0 5px 0;
+}
+.special-offers dd.utility-nav {
+  position: relative;
+}
+.special-offers .sp_offers {
+  float: right !important;
+  width: 62%;
+}
+.special-offers .hotel-details {
+  float: left !important;
+  width: 35%;
+  padding: 0 0 10px 0;
+}
+.special-offers .small-arrow {
+  background: none;
+  text-align: left;
+}
+.special-offers .small-arrow a {
+  font-size: 10px;
+  background: none;
+  padding: 3px 1px 0 0;
+  text-decoration: underline;
+}
+.special-offers .thumbnail {
+  -webkit-box-shadow: 0 2px 5px #969696;
+  -moz-box-shadow: 0 2px 5px #969696;
+  box-shadow: 0 2px 5px #969696;
+  padding: 2px;
+  background-color: #FEFEFE;
+}
+.special-offers .thumbnail img {
+  width: 100%;
+}
+.special-offers dl.special-search-result {
+  margin: 0;
+}
+.special-offers h3.offer-title {
+  margin: 0 0 10px 0;
+  font-size: 19px;
+  font-weight: normal;
+  line-height: 23px!important;
+}
+.special-offers h3.offer-title a {
+  line-height: 22px;
+}
+#special-search-result-container .special-offers .header_container {
+  float: left;
+  padding: 5px 0;
+}
+#special-search-result-container .special-offers .header {
+  padding: 4px 2px 2px 0;
+  background: none;
+}
+#special-search-result-container .special-offers h2 {
+  color: #333333;
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+  height: auto;
+  line-height: 12px;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+#special-search-result-container .special-offers dl.special-search-result {
+  float: none;
+}
+#special-search-result-container .special-offers .offer-container b a {
+  display: block;
+  max-width: 300px;
+  width: 300px;
+}
+#offer-container {
+  background: #ffffff;
+  padding: 10px;
+}
+.offer-container ul {
+  list-style: none;
+}
+.offer-container .offer-title h3 {
+  font-size: 18px !important;
+  line-height: 22px;
+}
+.offer-container .sp_offers .offer-date-interval {
+  margin: 10px 0 0;
+}
+.offer-container .sp_offers .splStayDate {
+  _margin: 10px 0 10px 0;
+  *margin: 10px 0 10px 0;
+}
+.offer-container .sp_offers .hbOfferSeparator {
+  margin: 0 0 0;
+  padding: 10px 0 30px 0;
+}
+.offer-container .package-details {
+  margin-bottom: 5px;
+}
+.offer-container .arrival-options-details {
+  margin-bottom: 5px;
+}
+.special-offers dl.special-search-result dt,
+dl.special-search-result dd {
+  margin: 0 0 5px 0 !important;
+  font-size: 12px;
+}
+.offerDescription .offer-price {
+  padding: 20px 5px 2px 7px;
+  font-size: 12px;
+}
+.calendarIcon {
+  cursor: pointer;
+  margin-left: 5px;
+}
+.groupCorpNum {
+  float: left;
+  margin-top: 5px;
+}
+.offers-divider {
+  background-color: #D8D8D8;
+  clear: both;
+  font-size: 2px;
+  height: 1px;
+  line-height: 1% !important;
+  margin: 0 0 15px;
+}
+.offer-image-gallery {
+  width: 100%;
+  margin: 20px 0;
+}
+.offer-image-gallery .image-preview-cnt img {
+  height: 225px;
+  width: 300px;
+  border: 1px solid #000000;
+}
+.offer-image-gallery .image-prv-cnt {
+  margin: 0 0 3px 3px;
+  width: 32%;
+  border: 1px solid #000000;
+}
+.offer-image-gallery .image-prv {
+  width: 100%;
+}
+#offerCalendarWrapper {
+  margin: 30px 0 0 20px;
+  padding: 10px;
+}
+#offerCalendarWrapper .datepicker table {
+  background-color: #F9F9F9;
+  border-spacing: 20px 0px;
+  border-collapse: separate;
+  color: #333333;
+}
+#offerCalendarWrapper input {
+  width: 150px !important;
+  padding: 0px !important;
+  display: inline-block !important;
+}
+#offerCalendarWrapper span {
+  padding: 0px!important;
+  display: inline-block !important;
+  vertical-align: middle;
+  height: 30px;
+  background: none;
+  border: none;
+  margin: 0;
+  line-height: 16px;
+}
+#offerCalendarWrapper label {
+  display: inline-block !important;
+}
+
+#offerCalendarWrapper .datesDiv{
+	display:inline;
+}
+.bookableOfferList .styled-select {
+  float: right;
+}
+#sp-main-body-wrapper #sp-component-area {
+  border: 0px solid #DDD !important;
+  background: none !important;
+  padding: 5px !important;
+}
+.bookableOfferContainer {
+  display: block;
+  clear: both;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #eaeaea;
+  background: #fff;
+  overflow: auto;
+}
+.bookableOfferContainer .boxPadding {
+  padding: 10px 3px 15px;
+}
+.bookableOfferContainer .styled-select {
+  float: right !important;
+  margin-top: -4px;
+}
+.bookableOfferContainer .personContainer > div {
+  display: inline;
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: default.xml 46 2010-11-21 17:27:33Z chdemko $ -->
+<metadata>
+    <layout title="JHOTELRESERVATION_ROOM_VIEW">
+        <message><![CDATA[JHOTELRESERVATION_ROOM_VIEW]]></message>
+    </layout>
+
+    <fields name="request">
+        <fieldset name="request" addfieldpath="/administrator/components/com_jhotelreservation/models/fields">
+
+            <field name="hotel_id"
+                   type="hotels"
+                   label="Hotel"
+                   multiple="false"
+                   size="10"
+                   description="Select Hotel"
+                   default="">
+            </field>
+
+         </fieldset>
+    </fields>
+</metadata>

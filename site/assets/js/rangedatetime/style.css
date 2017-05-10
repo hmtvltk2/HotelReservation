@@ -1,0 +1,47 @@
+.jqueryDatePickerDiv a:link,
+.jqueryDatePickerDiv a:visited {
+    color: #44a;
+}
+.jqueryDatePickerDiv a:hover,
+.jqueryDatePickerDiv a:active {
+    color: #a44;
+}
+.jqueryDatePickerDiv h2 {
+    border-bottom: 1px solid #ccc;
+}
+
+.jqueryDatePickerDiv{
+    margin: 0;
+    margin-bottom: 0px;
+    padding: 0;
+    background-color: inherit;
+}
+.jqueryDatePickerDiv .section {
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+.jqueryDatePickerDiv label input[type=text] {
+    margin: 0;
+    width: 100px;
+    height: 16px;
+    padding: 0;
+    text-align: center;
+}
+.firstCal{
+    margin-left:20px !important;
+}
+
+.jqueryDatePickerDiv .block .section label span.calendarIcon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABCElEQVQ4T2NkYGBYBsShQNwKxAeAeD8Qg4AjEDsAcT2UD6MacairBoqvZAQS/4AYRONSSKyBIHX/QAb9h1oNMnAeEEdC+cuBdBIOF+JUh2zgYqDmRWjeiwPyY9HE8KpDNhBNH3lcmho4C+gmECYHpAE1gTA4dpEjpYEc04B6QPrAqQGXgS5Qg+8B6fdAbAzlnwXSgkCsBOXvgdIEDUR29QGgJlyJHeQgEKC/gTAvPgfa/hmI1aAuuQWkeYFYEikIiHJhB1IYgcIRHINAAEoFoPCDhXHFgHmZ6pEC9QnRFMFYJtokfGF4FCh5hFSToOptgLQ1iI1cwJJpFoo2cAELqgJghSqlhi4FACqZYUdwI8SAAAAAAElFTkSuQmCC');
+    vertical-align: top;
+}
+.jqueryDatePickerDiv .changeLog .dateTime {
+    color: #bbb;
+    font-size: 0.8em;
+}
+.jqueryDatePickerDiv .changeLog .dateTime:before {
+    content: ' : ';
+}

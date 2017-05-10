@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6.0" type="plugin" group="system" method="upgrade">
+	<name>Hotel Gallery</name>
+	<author>CMSJunkie</author>
+	<creationDate>2015-01-15</creationDate>
+	<version>1.0</version>
+	<copyright>Copyright (c) 2015 CMSJunkie- All Rights Reserved</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>support@cmsjunkie.com</authorEmail>
+	<authorUrl>www.cmsjunkie.com</authorUrl>
+	<description>
+		<![CDATA[
+		 	Hotel Gallery Plugin allows you to load a hotel gallery wherever you please.
+			<br><br>
+			To do that simply use insert the following text <b>{hotelgallery|11}</b> where 11 is the hotel id.
+			<br>
+			The hotel id can be retrieved from the backend when editing a hotel. While in the edit screen in the navigation bar you will see an URL ending with administrator/index.php?option=com_jhotelreservation&task=hotel.edit&cid[]=11
+			The part that follows after <b>cid[]=</b> is your hotel id. In our case 11.   
+	     ]]>
+	</description>
+	<files>
+		<filename plugin="hotelgallery">hotelgallery.php</filename>
+		<folder>gallery</folder>
+	</files>
+</extension>

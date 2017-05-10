@@ -1,0 +1,12 @@
+.reservation-details {
+  background: #f9f9f9;
+  border: 1px solid #eaeaea;
+  font-size: 1em;
+  line-height: 20px;
+  margin-bottom: 20px;
+  margin-left: 0 !important;
+  padding: 5px 10px;
+}
+.reservation-steps ul li.completed {
+  background: #edf7ff;
+}

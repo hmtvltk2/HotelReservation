@@ -1,0 +1,47 @@
+#add-hotel-container .section {
+  border: none;
+}
+#add-hotel-container input[type="text"] {
+  max-width: 65%;
+}
+#add-hotel-container .reservationButtons {
+  margin-top: 20px;
+}
+#add-hotel-container .current {
+  overflow: hidden;
+  height: 820px;
+}
+#add-hotel-container .current .tabs {
+  height: 800px;
+}
+#add-hotel-container textarea.mce_editable {
+  width: 95% !important;
+}
+#add-hotel-container .hotel-editor {
+  margin: 10px;
+}
+#add-hotel-container .reservation-details {
+  background: #ffffff;
+  display: inline;
+  width: auto;
+}
+#add-hotel-container .reservation-details label {
+  display: inline;
+  float: none;
+  width: auto;
+}
+#add-hotel-container .reservation-details .calendarDisplay {
+  display: inline;
+}
+#add-hotel-container .reservation-details .calendarDisplay input {
+  display: inline-block;
+  width: auto;
+  pointer-events: auto;
+  cursor: auto;
+  background-color: #ffffff;
+}
+#end_date_img,
+#start_date_img {
+  margin-left: -40px !important;
+  margin-top: -10px;
+}

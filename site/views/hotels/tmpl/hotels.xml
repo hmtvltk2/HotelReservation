@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: default.xml 46 2010-11-21 17:27:33Z chdemko $ -->
+<metadata>
+    <layout title="JHOTELRESERVATION_AVAILABLE_LIST_HOTELS">
+        <message><![CDATA[JHOTELRESERVATION_AVAILABLE_LIST_HOTELS]]></message>
+    </layout>
+
+    <fields name="request">
+        <fieldset name="request" addfieldpath="/administrator/components/com_jhotelreservation/models/fields">
+
+            <field name="filterRegion"
+                   type="hotelregions"
+                   label="Region"
+                   multiple="false"
+                   size="10"
+                   description="Select Region"
+                   default="">
+            </field>
+
+            <field name="city"
+                   type="hotelcities"
+                   label="City"
+                   multiple="false"
+                   size="10"
+                   description="Select City"
+                   default="">
+            </field>
+
+            <field name="filterType"
+                   type="hoteltypes"
+                   label="Type"
+                   multiple="false"
+                   size="10"
+                   description="Select Type"
+                   default="">
+            </field>
+            
+	      	<field name="no-dates" type="radio" class="btn-group btn-group-yesno radio" default="0" label="Consider availability" description="Display only hotels with available rooms/offers">
+                <option value="0">Yes</option>
+                <option value="1">No</option>
+            </field>
+        </fieldset>
+    </fields>
+</metadata>

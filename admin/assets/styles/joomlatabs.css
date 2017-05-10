@@ -1,0 +1,102 @@
+dl.tabs {
+  float: left;
+  margin: 10px 0 -1px 0;
+  z-index: 50;
+}
+dl.tabs dt {
+  float: left;
+  padding: 4px 10px;
+  border: 1px solid #cccccc;
+  margin-left: 3px;
+  background: #e9e9e9;
+  color: #666666;
+}
+dl.tabs dt h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  font-weight: normal;
+}
+dl.tabs dt h3 a:link {
+  color: #333333;
+  outline: medium none;
+  text-decoration: none;
+}
+dl.tabs dt.open {
+  background: #f9f9f9;
+  border-bottom: 1px solid #f9f9f9;
+  z-index: 100;
+  color: #000000;
+}
+div.current {
+  clear: both;
+  border: 1px solid #cccccc;
+  padding: 10px 10px;
+}
+div.current dd {
+  padding: 0;
+  margin: 0;
+}
+div.current fieldset {
+  border: none 0;
+}
+div.current fieldset.adminform {
+  border: 1px #cccccc solid;
+  margin-right: 9px;
+}
+div.current fieldset.radio {
+  float: left;
+}
+div.current fieldset.radio input {
+  clear: none;
+  min-width: 15px;
+  float: left;
+  margin: 3px 0 0 2px;
+}
+div.current fieldset.radio label {
+  clear: none;
+  min-width: 45px;
+  float: left;
+  margin: 3px 0 0 0;
+}
+div.current fieldset.checkboxes {
+  float: left;
+  clear: right;
+}
+div.current fieldset.checkboxes input {
+  clear: left;
+  min-width: 15px;
+  float: left;
+  margin: 3px 0 0 2px;
+}
+div.current fieldset.checkboxes label {
+  clear: right;
+  min-width: 45px;
+  margin: 3px 0 0 5px;
+}
+div.current select {
+  margin-bottom: 15px;
+}
+div.current > label,
+div.current > span.faux-label {
+  display: block;
+  min-width: 150px;
+  float: left;
+  clear: left;
+  margin-top: 8px;
+}
+div.current input,
+div.current textarea,
+div.current select {
+  clear: none;
+  float: left;
+  margin: 3px 0 0 2px;
+}
+dl#content-pane.tabs {
+  margin: 1px 0 0 0;
+}
+p.tab-description {
+  font-size: 1.091em;
+  margin-left: 0;
+  margin-top: 5px;
+}

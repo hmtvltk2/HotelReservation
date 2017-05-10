@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="3.0"  group="system" method="upgrade">
+	<name>Hotel Url Translator</name>
+	<author>CMS Junkie</author>
+	<creationDate>May 2012</creationDate>
+	<copyright>Copyright (C) 2007 - 2015 CMS Junkie. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>info@cmsjunkie.com</authorEmail>
+	<authorUrl>www.cmsjunkie.com</authorUrl>
+	<version>5.0.0</version>
+	<description>This plugin is used for component translation</description>
+	<files>
+		<filename plugin="hotelurltranslator">hotelurltranslator.php</filename>
+		<filename>index.html</filename>
+	</files>
+</extension>

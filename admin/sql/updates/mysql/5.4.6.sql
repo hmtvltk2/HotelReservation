@@ -1,0 +1,1 @@
+ALTER TABLE  `#__hotelreservation_payment_processors` ADD  `hotel_id` INT( 5 ) NOT NULL DEFAULT '0' AFTER  `id` ;

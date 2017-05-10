@@ -1,0 +1,60 @@
+.mod_hotel_reservation 
+{
+	background-color	: none;
+	border: 0px;
+	dispaly: block;
+}
+
+.mod_hotel_reservation select, .mod_hotel_reservation textarea, .mod_hotel_reservation input[type="text"],.mod_hotel_reservation label {
+	background: none;
+	color: #ccc !important;
+	border-color: #ddd;
+}
+
+.mod_hotel_reservation h3 {
+	color: #FFF !important;
+}
+
+::-moz-placeholder,::-webkit-input-placeholder{ color: white; }
+
+
+.mod_hotel_reservation .styled-select {
+    background: transparent;
+    border: 1px solid #ddd;
+    height: 30px;
+    min-width: 50px;
+    overflow: hidden;
+    width: 40%;
+}
+
+.mod_hotel_reservation .styled-select select {
+    -moz-appearance: none;
+    background: url("../../images/arrows.png") no-repeat scroll 55% -21px !important;
+    background-color:transparent;
+    color:#ccc !important;
+}
+
+.mod_hotel_reservation .ui-hotel-button, .mod_hotel_reservation a.ui-hotel-button {
+	 background: none;
+	 border: 2px solid #fff !important;
+ 	 border-radius:0px;
+ 	 font-weight:bold;
+}
+
+.mod_hotel_reservation .ui-hotel-button:hover, .mod_hotel_reservation a.ui-hotel-button:hover {
+	 border: 2px solid #1B98C7 !important;
+}
+
+#mod_hotel_reservation .icon-calendar {
+    background-image: url("../../images/ico-calendar-white.png");
+}
+
+ .mod_hotel_reservation .ui-hotel-button:hover {
+	background: #0077B7;
+    background: -moz-linear-gradient(center top , #0077B7 0%, #0095DD 80%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: -webkit-gradient(linear, left top, left bottom, from(#0077B7), to(#0095DD) );
+	background: -webkit-linear-gradient(top, #0077B7, #0095DD);
+	background: linear-gradient(top, #0077B7, #0095DD);
+    cursor: pointer;
+    text-shadow: 1px -1px #1B98C7;
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" client="site" method="upgrade">
+    <name>JHotelReservationViewedProperties</name>
+    <creationDate>2016-01-20</creationDate>
+    <author>CMSJunkie</author>
+    <copyright>(C) CMSJunkie. All rights reserved.</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html</license>
+    <authorEmail>info@cmsjunkie.com</authorEmail>
+    <authorUrl>www.cmsjunkie.com</authorUrl>
+    <version>5.7.0</version>
+    <description>JHotelreservation Viewed Properties</description>
+
+    <files>
+        <filename>mod_jhotelviewedproperties.xml</filename>
+        <filename module="mod_jhotelviewedproperties">mod_jhotelviewedproperties.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <folder>tmpl</folder>
+        <folder>assets</folder>
+    </files>
+</extension>

@@ -1,0 +1,245 @@
+@import "mixins";
+@import "variables";
+
+#special-offers-container {
+  background: @commonBg;
+  #search-order {
+    line-height: @line-height-computed;
+    min-height: 47px;
+    padding: 10px;
+  }
+}
+.special-offers {
+  background: @commonBg;
+  padding: 15px @mediumPadding;
+  .offer-container.featured {
+    background: #E0EEF0;
+    background: -webkit-gradient(linear, left top, left bottom, from(#E0EEF0),to(#CFE4E8) );
+    background: -webkit-linear-gradient(top, #E0EEF0, #CFE4E8);
+    background: -moz-linear-gradient(top, #E0EEF0, #CFE4E8);
+    background: linear-gradient(top, #E0EEF0, #CFE4E8);
+  }
+  .hotel-name {
+    padding: @paddingNone @paddingNone 5px @paddingNone;
+  }
+  dd.utility-nav {
+    position: relative;
+  }
+  .sp_offers {
+    float: right !important;
+    width: 62%;
+  }
+  .hotel-details {
+    float: left !important;
+    width: 35%;
+    padding: @paddingNone @paddingNone 10px @paddingNone;
+  }
+  .small-arrow {
+    background: none;
+    text-align: left;
+    a {
+      font-size: 10px;
+      background: none;
+      padding: 3px 1px @paddingNone @paddingNone;
+      text-decoration: underline;
+    }
+  }
+  .thumbnail {
+    .box-shadow(0 2px 5px #969696);
+    padding: 2px;
+    background-color: #FEFEFE;
+    img {
+      width: 100%;
+    }
+  }
+  dl.special-search-result {
+    margin: @marginNone;
+  }
+  h3.offer-title {
+    margin: @marginNone @marginNone @mediumMargin @marginNone;
+    font-size: 19px;
+    font-weight: normal;
+    line-height: 23px!important;
+    a {
+      line-height: 22px;
+    }
+  }
+}
+#special-search-result-container {
+  .special-offers {
+    .header_container {
+      float: left;
+      padding: @basePadding @paddingNone;
+    }
+    .header {
+      padding: 4px 2px 2px @paddingNone;
+      background: none;
+    }
+    h2 {
+      color: #333333;
+      display: block;
+      font-size: @font-size-small;
+      font-weight: normal;
+      height: auto;
+      line-height: 12px;
+      margin: @marginNone;
+      padding: @paddingNone;
+      text-transform: uppercase;
+    }
+    dl.special-search-result {
+      float: none;
+    }
+    .offer-container {
+      b {
+        a {
+          display: block;
+          max-width: @widthInPixels;
+          width: @widthInPixels;
+        }
+      }
+    }
+  }
+}
+#offer-container {
+  background: @commonBg;
+  padding: 10px;
+}
+.offer-container {
+  ul {
+    list-style: none;
+  }
+  .offer-title {
+    h3 {
+      font-size: @font-size-large !important;
+      line-height: 22px;
+    }
+  }
+  .sp_offers {
+    .offer-date-interval {
+      margin: @mediumMargin @marginNone @marginNone;
+    }
+    .splStayDate {
+      _margin: @mediumMargin @marginNone @mediumMargin @marginNone;
+      *margin: @mediumMargin @marginNone @mediumMargin @marginNone;
+    }
+    .hbOfferSeparator {
+      margin: @marginNone @marginNone @marginNone;
+      padding: @mediumPadding @paddingNone 30px @paddingNone;
+    }
+  }
+  .package-details {
+    margin-bottom: @baseMargin;
+  }
+  .arrival-options-details {
+    margin-bottom: @baseMargin;
+  }
+}
+.special-offers dl.special-search-result dt,dl.special-search-result dd {
+  margin: @marginNone @marginNone @baseMargin @marginNone !important;
+  font-size: @font-size-small;
+}
+.offerDescription {
+  .offer-price {
+    padding: 20px @basePadding 2px 7px;
+    font-size: @font-size-small;
+  }
+}
+.calendarIcon {
+  cursor: pointer;
+  margin-left: @baseMargin;
+}
+.groupCorpNum {
+  float: left;
+  margin-top: @baseMargin;
+}
+.offers-divider {
+  background-color: #D8D8D8;
+  clear: both;
+  font-size: @font-size-xsmall;
+  height: 1px;
+  line-height: 1% !important;
+  margin: @marginNone @marginNone ceil((@baseMargin + 10));
+}
+.offer-image-gallery {
+  width: 100%;
+  margin: ceil((@baseMargin + 15)) @marginNone;
+  .image-preview-cnt {
+    img {
+      height: 225px;
+      width: @widthInPixels;
+      border: @imageSolidBorder;
+    }
+  }
+  .image-prv-cnt {
+    margin: @marginNone @marginNone ceil((@baseMargin - 2)) ceil((@baseMargin - 2));
+    width: 32%;
+    border: @imageSolidBorder;
+  }
+  .image-prv {
+    width: 100%;
+  }
+}
+
+#excursionCalendarWrapper{
+	margin: 30px 0 0 20px;
+	padding:10px;
+	.datepicker table {
+	  background-color: #F9F9F9;
+	  border-spacing: 20px 0px;
+	  border-collapse: separate;
+	  color: #333
+	}
+	input{
+		width:150px !important;
+		padding: 0px !important;
+		display:inline-block !important;
+	}
+	
+	span{
+	    padding: 0px!important;
+	    display: inline-block!important;
+	    vertical-align: middle;
+	    height: 30px;
+	    background: none;
+	    border: none;
+	    margin: 0;
+	    line-height: 16px;
+	    float:left;
+	}
+	
+	label{
+		display:inline-block !important;
+	}
+}
+
+.bookableOfferList{ 
+	.styled-select{
+		float:right;
+	}
+}
+
+#sp-main-body-wrapper #sp-component-area {
+    border: 0px solid #DDD !important;
+	background: none !important;
+	padding: 5px !important;
+}
+
+.bookableOfferContainer{
+    display: block;
+    clear: both;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #eaeaea;
+    background: #fff;
+    overflow: auto;
+    .boxPadding{
+		padding: 10px 3px 15px;
+	}
+	.styled-select {
+	  float: right !important;
+	  margin-top:-4px;
+	}
+	.personContainer > div{
+		display:inline;
+	}
+}

@@ -1,0 +1,108 @@
+@import "variables";
+@import "mixins";
+
+dl.tabs {
+  float: left;
+  margin: @mediumMargin @marginNone -1px @marginNone;
+  z-index: 50;
+  dt {
+    float: left;
+    padding: 4px @mediumPadding;
+    border: 1px solid @gray-20;
+    margin-left: @joomlatabMargin1;
+    background: #e9e9e9;
+    color: @gray-60;
+    h3 {
+      margin: @marginNone;
+      padding: @paddingNone;
+      font-size: 1em;
+      font-weight: normal;
+      a:link {
+        color:@gray-dark;
+        outline:medium none;
+        text-decoration:none;
+      }
+    }
+  }
+  dt.open {
+    background: @color-White;
+    border-bottom: 1px solid @color-White;
+    z-index: 100;
+    color: @gray-base;
+  }
+}
+div.current {
+  clear: both;
+  border: 1px solid @gray-20;
+  padding: @mediumPadding @mediumPadding;
+  dd {
+    padding: @paddingNone;
+    margin: @marginNone;
+  }
+  fieldset {
+    border: none 0;
+  }
+  fieldset.adminform {
+    border: 1px @gray-20 solid;
+    margin-right: (@mediumMargin - 1 );
+  }
+  fieldset.radio {
+    float: left;
+    input {
+      clear: none;
+      min-width: 15px;
+      float: left;
+      margin: @joomlatabMargin1 @marginNone @marginNone @joomlatabsMargin2;
+    }
+    label {
+      clear: none;
+      min-width: 45px;
+      float: left;
+      margin: @joomlatabMargin1 @marginNone @marginNone @marginNone;
+    }
+  }
+  fieldset.checkboxes {
+    float: left;
+    clear: right;
+    input {
+      clear: left;
+      min-width: 15px;
+      float: left;
+      margin: @joomlatabMargin1 @marginNone @marginNone @joomlatabsMargin2;
+    }
+    label {
+      clear: right;
+      min-width: 45px;
+      margin: @joomlatabMargin1 @marginNone @marginNone (@joomlatabsMargin2 + 3);
+    }
+  }
+  select {
+    margin-bottom: @largeMargin;
+  }
+
+  >label,
+  >span.faux-label {
+    display: block;
+    min-width: 150px;
+    float: left;
+    clear: left;
+    margin-top: 8px;
+  }
+
+  input,
+  textarea,
+  select {
+    clear: none;
+    float: left;
+    margin: @joomlatabMargin1 @marginNone @marginNone @joomlatabsMargin2;
+  }
+}
+dl#content-pane.tabs {
+  margin: 1px @marginNone @marginNone @marginNone;
+}
+
+p.tab-description {
+  font-size: 1.091em;
+  margin-left: @marginNone;
+  margin-top: @baseMargin;
+}

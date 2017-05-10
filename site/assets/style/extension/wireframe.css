@@ -1,0 +1,72 @@
+.reservation-details {
+  background: #fff;
+  border: 1px solid #eaeaea;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 20px;
+  margin-left: 0 !important;
+  padding: 5px 10px;
+}
+
+.hotel_reservation .tabs li:hover, .hotel_reservation .tabs li.selected {
+    background: #fff;  
+    border: 2px solid #999 !important;
+}
+
+.reservation-details select,
+.reservation-details textarea,
+.reservation-details input[type="text"],
+.reservation-details label {
+  background: none;
+  color: #333 !important;
+  border-color: #999;
+}
+.reservation-details .ui-hotel-button,
+.reservation-details a.ui-hotel-button {
+  background: none  !important;
+  border: 2px solid 999 !important;
+  border-radius: 0px  !important;
+  font-weight: bold  !important;
+  color: #333 !important;
+  text-shadow: none !important;
+}
+.reservation-details .ui-hotel-button:hover,
+.reservation-details a.ui-hotel-button:hover {
+  background: none  !important;
+  border-radius: 0px  !important;
+  font-weight: bold  !important;
+  text-shadow: none !important;
+  color: #333333 !important;
+  border: 2px solid #fff !important;
+}
+.styled-select {
+  background: none  !important;
+  border: 1px solid #999  !important;
+  height: 30px !important;
+  min-width: 50px !important;
+  overflow: hidden !important;
+  width: 40% !important;
+}
+.styled-select select {
+  -moz-appearance: none;
+  background: url("../../img/arrows.png") no-repeat scroll 55% -21px transparent !important;
+  background-color: transparent;
+  color: #333 !important;
+}
+
+.ui-hotel-button .grey,
+a.ui-hotel-button .grey,
+.ui-hotel-button .grey.ui-hotel-button-disabled:hover,
+input.ui-hotel-button .grey[disabled="disabled"]:hover,
+button.ui-hotel-button .grey[disabled="disabled"]:hover {
+  text-shadow: none;
+}
+.ui-hotel-button:hover,
+a.ui-hotel-button:hover {
+  background: none !important;
+  border-radius: 0px !important;
+  font-weight: bold !important;
+  text-shadow: none !important;
+  color: #333 !important;
+  border: 2px solid #ccc !important;
+}
