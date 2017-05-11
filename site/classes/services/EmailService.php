@@ -7,7 +7,7 @@ class EmailService{
         $db = JFactory::getDBO();
 		//$languageTag = JRequest::getVar( '_lang');
 		if(empty($languageTag)){
-			$languageTag = "en-GB";
+			$languageTag = "vn-VN";
 		}
 		
 		$query = " SELECT a.*

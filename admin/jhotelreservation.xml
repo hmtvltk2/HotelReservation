@@ -79,7 +79,7 @@
 			<menu img="components/com_jhotelreservation/assets/img/about_16_16_icon.gif" view="about">ABOUT</menu>
 		</submenu>
 		<languages folder='admin'>
-			<language tag="en-GB">language/en-GB/en-GB.com_jhotelreservation.sys.ini</language>
+			<language tag="vn-VN">language/vn-VN/vn-VN.com_jhotelreservation.sys.ini</language>
 		</languages>
 	
 		<files folder="admin">

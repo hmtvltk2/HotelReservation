@@ -943,7 +943,7 @@ class JHotelUtil{
     }
 
     /**
-     * @param $languageTag language tag  like en-GB
+     * @param $languageTag language tag  like vn-VN
      * @return Returns a sting with a name of a languge based on its language tag $languageTag
      */
     public static  function languageNameTabs($languageTag){

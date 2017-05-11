@@ -88,79 +88,12 @@ $currency = JHotelUtil::getCurrencyDisplay($this->userData->currency,null,null);
 					if(($isSuperUser && SHOW_PAYMENT_ADMIN_ONLY==1) || SHOW_PAYMENT_ADMIN_ONLY==0)
 						$showPaymentOption = true;
 				?>
-				<?php if($this->appSettings->is_enable_payment){ ?>
-				<TR>
-					<TD align=left colspan=1>
-						<div id="payment-errors" class="red"></div>
-					</TD>
-				</TR>
-				<tr style="display:<?php echo $showPaymentOption?"block":"none" ?>" >
-					<td colspan="10">
-						<strong><?php echo JText::_("LNG_PAYMENT_METHODS");?></strong>
-						<dl class="sp-methods" id="checkout-payment-method-load">
-							<?php
-								if(count($this->paymentMethods)==0 && $this->appSettings->is_enable_payment){
-									echo "<label class='red'>".JText::_('LNG_PAYMENT_PROCESSORS_DESC')."</span>";
-								}
-									
-							    foreach ($this->paymentMethods as $method){
-							?>
-							    <dt>
-							    	<div class="styledRadio">
-							        	<input id="p_method_<?php echo $method->type ?>" value="<?php echo $method->type ?>" type="radio" name="payment_method" title="<?php echo $method->name ?>" onclick="switchMethod('<?php echo $method->type ?>','<?php echo $method->id?>')"<?php if($this->state->get("payment.payment_method")==$method->type): ?> checked="checked"<?php endif; ?> class="validate[required] radio" />
-										<label for="p_method_<?php echo $method->type ?>"></label>							        	
-							        </div>
-								    <img class="payment-icon" src="<?php echo JURI::base() ."components/".getBookingExtName().'/assets/img/payment/'.strtolower($method->type).'.gif' ?>"  />
-							        <label for="p_method_<?php echo $method->type ?>"><?php echo $method->name ?> </label>
-							    </dt>
-							<?php if ($html = $method->getPaymentProcessorHtml()){ ?>
-								<dd>
-									<?php echo $html; ?>
-								</dd>
-							<?php } ?>
-						<?php } ?>
-						</dl>
-					</td>
-				</tr>
-				<?php } ?>	
 				<TR >
 					<TD valign=top align=left>
 						<BR>
 						<div class='div_reservation_policies_title tr_with_dspl_none'><?php echo JText::_('LNG_RESERVATION_POLICIES');?></div>
 						<div class='div_reservation_policies_info tr_with_dspl_none'>
 							<?php echo JText::_('LNG_RESERVATION_POLICIES_DETAILS');?>
-						</div>
-						<div>
-							<div class="styledCheckbox">
-							<input 
-								type 		='checkbox'
-								id			= 'is_accept_policies'
-								name		= 'is_accept_policies'
-								class		= 'validate[required]'
-							>&nbsp;
-								<label for="is_accept_policies"></label>
-							</div> 
-							
-							<a href="javascript:void(0);" id="linkShowHide" onclick="showTerms('conditions')"><?php echo JText::_('LNG_AGREE_WITH_TERMS')?></a>
-		
-							
-	                        <div id="conditions" class="terms-conditions tr_with_dspl_none">
-	                            <div id="dialog-container">
-	                                <div style="margin-bottom: -75px !important;padding-bottom: 39px">
-	                                    <h3 class="title"> <?php echo JText::_('LNG_TERMS_AND_CONDITIONS');?></h3>
-	                                </div>
-	                                    <div class="dialogContent">
-	
-	                                    <div class="dialogContentBody" id="dialogContentBody">
-	                                        <div>
-	                                        <?php
-	                                        $termsandConditionsContent = $this->hoteltranslationsModel->getObjectTranslation(TERMS_AND_CONDITIONS_TRANSLATION, $this->appSettings->applicationsettings_id, JRequest::getVar('_lang'));
-	                                        echo isset($termsandConditionsContent) ? $termsandConditionsContent->content : "" ; ?>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                            </div>
-	                        </div>
 						</div>
 					</TD>
 				</TR>
@@ -180,7 +113,7 @@ $currency = JHotelUtil::getCurrencyDisplay($this->userData->currency,null,null);
 						<button class="ui-hotel-button " name="checkRates" type="submit" onclick="return checkContinue();">
 							<i class="fa fa-check"></i>
 							<span class="ui-button-text">
-								<?php echo JText::_('LNG_MAKE_RESERVATION');?>
+								<?php echo JText::_('LNG_PAYMENT');?>
 							</span>
 						</button>
 					</td>
@@ -206,10 +139,11 @@ $currency = JHotelUtil::getCurrencyDisplay($this->userData->currency,null,null);
 			var form 	= document.forms['userForm'];
 
 			jQuery('#userForm').validationEngine('attach');				
-			if(!jQuery('#userForm').validationEngine('validate'))
-				return false;
+			if(jQuery('#userForm').validationEngine('validate'))
+				is_ok = true
 			
-			return true;
+			
+			return is_ok;
 		}
 
 		function applyDiscountCode(){

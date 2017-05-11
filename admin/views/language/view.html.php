@@ -57,7 +57,7 @@ class JHotelReservationViewLanguage extends  JViewLegacy
 
 		} else{
 			$loadLatest = true;
-			$file->content = JFile::read(JPATH_COMPONENT_ADMINISTRATOR.DS.'language'.DS.'en-GB'.DS.'en-GB.'.getBookingExtName().'.ini');
+			$file->content = JFile::read(JPATH_COMPONENT_ADMINISTRATOR.DS.'language'.DS.'vn-VN'.DS.'vn-VN.'.getBookingExtName().'.ini');
 		}
 
 
