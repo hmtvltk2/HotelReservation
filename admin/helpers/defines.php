@@ -204,6 +204,8 @@ if( !defined( 'PROCESSOR_WIRE_TRANSFER') )
 	define( 'PROCESSOR_WIRE_TRANSFER','wiretransfer'); 
 if( !defined( 'PROCESSOR_CASH') )
 	define( 'PROCESSOR_CASH','Cash'); 
+	if( !defined( 'PROCESSOR_THANHTOANONLINE') )
+	define( 'PROCESSOR_THANHTOANONLINE','ThanhToanOnline');
 if( !defined( 'PROCESSOR_MPESA') )
 	define( 'PROCESSOR_MPESA','mpesa');  
 if( !defined( 'PROCESSOR_IDEAL_OMNIKASSA') )

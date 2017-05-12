@@ -1724,7 +1724,8 @@ CREATE TABLE IF NOT EXISTS `#__hotelreservation_payment_processors` (
 INSERT INTO `#__hotelreservation_payment_processors` (`id`, `name`, `type`, `username`, `password`, `mode`, `status`, `ordering`, `timeout`, `displayfront`) VALUES
 (1, 'PayPal', 'paypal', '', '', 'test', 1, 1, 0, 1),
 (2, 'Wire Transfer', 'wiretransfer', '', '', 'test', 1, 2, 10, 1),
-(3, 'Credit Card', 'authorize', '', '', 'live', 1, NULL, 0, 1);
+(3, 'Credit Card', 'authorize', '', '', 'live', 1, NULL, 0, 1),
+(4, 'Thanh toán online', 'thanhtoanonline', 'huynhminhtri2412@gmail.com', '7dd38d346e40159bd4ef9a46bbd252d5','live',1,1,10,1,1);
 
 CREATE TABLE IF NOT EXISTS `#__hotelreservation_payment_processor_fields` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
